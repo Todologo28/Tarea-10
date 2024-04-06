@@ -46,9 +46,9 @@ public class Main {
                 System.out.println(contraseña);
             }
 
-            System.out.print("\n¿Desea introducir más contraseñas? (Sí/No): ");
+            System.out.print("\n¿Desea introducir más contraseñas? (Si/No): ");
             String respuesta = scanner.nextLine();
-            if (!respuesta.equalsIgnoreCase("Sí")) {
+            if (!respuesta.equalsIgnoreCase("Si")) {
                 continuar = false;
             }
         }

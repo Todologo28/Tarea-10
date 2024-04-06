@@ -19,7 +19,8 @@ public class Pass implements Callable<Boolean> {
         // Verificar longitud mínima
         if (password.length() < 8) {
             return false;
-        }
+        }else if (password.length() >8)
+            return true;
 
         // Verificar caracteres especiales
         if (!Pattern.matches(".*[!@#$%^&*()_+\\-=\\[\\]{};':\"\\\\|,.<>\\/?].*", password)) {
